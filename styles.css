@@ -1,3 +1,66 @@
-body {
-    background-image: url('The_Lighthouse_013.jpg');
+.blog-image{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    background-position: -170px -170px;
+    background-image: url("pfp_source.jpeg");
+
+    margin-right: 20px;
+
+}
+
+.blog-intro {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    
+}
+
+.blog-header {
+    text-align: center;
+}
+
+/* 
+Get custom font for blog username/title
+*/
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+#blog-title {
+    color: rgb(145, 223, 12);
+    font-weight: bold;
+    font-family: 'Rocher';
+    font-size:35px;
+}
+
+.blog-socials a {
+    list-style-type: none;
+    text-align: left;
+    margin-right: 5px;
+}
+
+
+#blog-quote {
+    font-weight: bold;
+}
+
+
+
+/* Body Styling */
+
+
+.body-image {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-image: url("The_Lighthouse_013.jpg");
+    left: 5%;
+    top: 50%;
+
+    position: absolute;
+    transform: translateY(-50%);
 }
