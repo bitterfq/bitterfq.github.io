@@ -4,7 +4,7 @@
     display: inline-block;
     border-radius: 50%;
     background-position: -170px -170px;
-    background-image: url("pfp_source.jpeg");
+    background-image: url("imgs/pfp_source.jpeg");
 
     margin-right: 20px;
 
@@ -57,7 +57,7 @@ Get custom font for blog username/title
     width: 500px;
     height: 500px;
     display: inline-block;
-    background-image: url("The_Lighthouse_013.jpg");
+    background-image: url("imgs/The_Lighthouse_013.jpg");
     left: 5%;
     top: 50%;
 
