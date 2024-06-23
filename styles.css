@@ -1,67 +1,96 @@
-.blog-image{
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    border-radius: 50%;
-    background-position: -170px -170px;
-    background-image: url("imgs/pfp_source.jpeg");
+/* main elements styling */
 
-    margin-right: 20px;
+main {
+  display: grid;
+}
 
+article {
+  display: block;
+}
+
+
+li {
+  list-style: none;
+}
+
+/* blog content styling */
+
+.blog-image {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 50%;
+  background-position: -170px -170px;
+  background-image: url("imgs/pfp_source.jpeg");
+
+  margin-right: 20px;
 }
 
 .blog-intro {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
 }
 
 .blog-header {
-    text-align: center;
+  text-align: center;
 }
 
-/* 
-Get custom font for blog username/title
-*/
-
-@font-face {
-    font-family: 'Rocher';
-    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
-}
 
 #blog-title {
-    color: rgb(145, 223, 12);
-    font-weight: bold;
-    font-family: 'Rocher';
-    font-size:35px;
+  color: rgb(145, 223, 12);
+  font-weight: bold;
+  font-family: "Rocher";
+  font-size: 35px;
 }
 
 .blog-socials a {
-    list-style-type: none;
-    text-align: left;
-    margin-right: 5px;
-    text-decoration: none;
+  list-style-type: none;
+  text-align: left;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+#blog-quote {
+  font-weight: bold;
 }
 
 
-#blog-quote {
-    font-weight: bold;
+.blog-posts {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  margin-bottom: 40px;
 }
 
 
 
 /* Body Styling */
 
-
 .body-image {
-    width: 500px;
-    height: 500px;
-    display: inline-block;
-    background-image: url("imgs/The_Lighthouse_013.jpg");
-    left: 5%;
-    top: 50%;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+  background-image: url("imgs/The_Lighthouse_013.jpg");
+  left: 5%;
+  top: 50%;
 
-    position: absolute;
-    transform: translateY(-50%);
+  position: absolute;
+  transform: translateY(-50%);
 }
+
+
+/* 
+Get custom font for blog username/title
+*/
+
+@font-face {
+  font-family: "Rocher";
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
