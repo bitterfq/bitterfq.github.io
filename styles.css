@@ -73,8 +73,8 @@ li {
 /* Body Styling */
 
 .body-image {
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   display: inline-block;
   background-image: url("imgs/The_Lighthouse_013.jpg");
   left: 5%;
