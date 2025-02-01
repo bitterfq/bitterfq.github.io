@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My Tech Blog</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on My Tech Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Feb 2025 12:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Post</title>
+      <link>http://localhost:1313/posts/my-second-post/</link>
+      <pubDate>Sat, 01 Feb 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-second-post/</guid>
+      <description>&lt;p&gt;🚀 &lt;strong&gt;This is a test post!&lt;/strong&gt;&lt;br&gt;&#xA;If you&amp;rsquo;re seeing this, your Hugo setup is working &lt;strong&gt;perfectly&lt;/strong&gt;.&lt;br&gt;&#xA;Now, try adding more posts and customizing your blog!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
