@@ -1,15 +1,17 @@
 
 ---
-title: "🚀 Automating Geospatial Data Processing for The Nature Conservancy"
+title: "🚀 Automating Geospatial Data for The Nature Conservancy"
 date: 2025-02-01T12:00:00
 draft: false
 ---
 
 🌍 **Scaling Environmental Data Processing with a Custom CLI Tool**  
+<!--more-->
 
 
 In collaboration with **The Nature Conservancy (TNC)**, I developed an **end-to-end geospatial data pipeline**  
 to process **large-scale satellite imagery** used for **environmental conservation and land monitoring**.  
+
 
 Handling **terabytes of satellite data** efficiently is challenging—  
 so I built a **CLI tool** that automates **data retrieval, preprocessing, and visualization**  
