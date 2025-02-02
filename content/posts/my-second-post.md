@@ -7,3 +7,4 @@ draft: false
 🚀 **This is a test post!**  
 If you're seeing this, your Hugo setup is working **perfectly**.  
 Now, try adding more posts and customizing your blog!
+
