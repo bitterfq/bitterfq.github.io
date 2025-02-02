@@ -1,10 +1,74 @@
 baseURL = "https://bitterfq.github.io/"
 languageCode = "en-us"
-title = "My Tech Blog"
+title = "BitterFq's Corner 🍻"
 theme = "typo"
 
 [params]
   author = "bitterfq"
-  description = "A simple retro-style tech blog."
+  description = "bitterfq's blog"
   github = "https://github.com/bitterfq"
   showLastUpdated = true
+  
+  homeIntroTitle = "Hey, I'm Aman! "
+  homeIntroContent = """
+  I'm a software engineer and **Master's student at the University of San Francisco (USF)**,  deeply focused on **data-driven systems, algorithms, and distributed computing**.  
+  
+  I thrive at the intersection of **large-scale data processing, geospatial analysis, and automation**,  building solutions that transform raw information into actionable insights.
+
+  Currently, I'm working on projects involving **data structures, information retrieval,  
+  and geospatial processing**, pushing the boundaries of **efficiency and scalability**.  
+  This is my corner of the internet.
+  """
+
+
+  # Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = true
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/bitterfq/"
+
+
+[[params.social]]
+name = "github"
+url = "https://github.com/bitterfq"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "about"
+url = "/about"
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
+
+  
