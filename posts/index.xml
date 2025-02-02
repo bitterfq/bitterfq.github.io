@@ -6,14 +6,21 @@
     <description>Recent content in Posts on BitterFq&#39;s Corner 🍻</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Feb 2025 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2025 01:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>🚀 Automating Geospatial Data Processing for The Nature Conservancy</title>
+      <title>On the Lightness of Being</title>
+      <link>http://localhost:1313/posts/lightness_of_being/</link>
+      <pubDate>Sun, 02 Feb 2025 01:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/lightness_of_being/</guid>
+      <description>&lt;p&gt;I wonder what the world has in store for us.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🚀 Automating Geospatial Data for The Nature Conservancy</title>
       <link>http://localhost:1313/posts/tnc-cli-tool/</link>
       <pubDate>Sat, 01 Feb 2025 12:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/tnc-cli-tool/</guid>
-      <description>&lt;p&gt;🌍 &lt;strong&gt;Scaling Environmental Data Processing with a Custom CLI Tool&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;In collaboration with &lt;strong&gt;The Nature Conservancy (TNC)&lt;/strong&gt;, I developed an &lt;strong&gt;end-to-end geospatial data pipeline&lt;/strong&gt;&lt;br&gt;&#xA;to process &lt;strong&gt;large-scale satellite imagery&lt;/strong&gt; used for &lt;strong&gt;environmental conservation and land monitoring&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Handling &lt;strong&gt;terabytes of satellite data&lt;/strong&gt; efficiently is challenging—&lt;br&gt;&#xA;so I built a &lt;strong&gt;CLI tool&lt;/strong&gt; that automates &lt;strong&gt;data retrieval, preprocessing, and visualization&lt;/strong&gt;&lt;br&gt;&#xA;to help conservationists work with geospatial data at scale.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;-the-problem-scaling-environmental-data-processing&#34;&gt;&#xA;  &lt;strong&gt;⚡ The Problem: Scaling Environmental Data Processing&lt;/strong&gt;&#xA;  &lt;a href=&#34;#-the-problem-scaling-environmental-data-processing&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Environmental research often relies on &lt;strong&gt;geospatial data&lt;/strong&gt; from sources like &lt;strong&gt;NASA, Sentinel, and Landsat&lt;/strong&gt;.&lt;br&gt;&#xA;However, working with &lt;strong&gt;large-scale raster imagery&lt;/strong&gt; presents multiple challenges:&lt;/p&gt;</description>
+      <description>&lt;p&gt;🌍 &lt;strong&gt;Scaling Environmental Data Processing with a Custom CLI Tool&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,7 @@
+/* Place custom css here */
+
+.article, .post-item, .post-summary {
+    margin-bottom: 50px;  /* Adjust spacing between posts */
+    padding-bottom: 30px; /* Optional: Adds padding below each post */
+    border-bottom: 1px solid #ddd; /* Optional: Adds a subtle separator */
+}
