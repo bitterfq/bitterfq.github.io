@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+<link rel="icon" type="image/ico" href="http://localhost:1313//favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313//favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313//android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313//apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    🚀 Automating Geospatial Data Processing for The Nature Conservancy | BitterFq&#39;s Corner 🍻
+    
+</title>
+
+<link rel="canonical" href="http://localhost:1313/posts/tnc-cli-tool/"/>
+
+<meta property="og:url" content="http://localhost:1313/posts/tnc-cli-tool/">
+  <meta property="og:site_name" content="BitterFq&#39;s Corner 🍻">
+  <meta property="og:title" content="🚀 Automating Geospatial Data Processing for The Nature Conservancy">
+  <meta property="og:description" content="🌍 Scaling Environmental Data Processing with a Custom CLI Tool
+In collaboration with The Nature Conservancy (TNC), I developed an end-to-end geospatial data pipeline
+to process large-scale satellite imagery used for environmental conservation and land monitoring.
+Handling terabytes of satellite data efficiently is challenging—
+so I built a CLI tool that automates data retrieval, preprocessing, and visualization
+to help conservationists work with geospatial data at scale.
+⚡ The Problem: Scaling Environmental Data Processing # Environmental research often relies on geospatial data from sources like NASA, Sentinel, and Landsat.
+However, working with large-scale raster imagery presents multiple challenges:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-01T12:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-01T12:00:00+00:00">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.c42972354e2863d6b250495c76b719eb174c8337fe89fd7f1951d48e6872d020.css" media="all">
+
+
+
+
+
+</head>
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="http://localhost:1313/">BitterFq&#39;s Corner 🍻</a>
+    </h1>
+
+    <div class="flex">
+        
+
+        
+        
+      
+        <p class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/resume.pdf" >
+                /resume
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/posts" >
+                /posts
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/about" >
+                /about
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+
+<div class="breadcrumbs">
+    
+    <a href="/">Home</a>
+    <span class="breadcrumbs-separator"> > </span>
+    
+    <a href="/posts/">Posts</a>
+    <span class="breadcrumbs-separator"> > </span>
+    
+    <a class="breadcrumbs-current" href="/posts/tnc-cli-tool/">🚀 Automating Geospatial Data Processing for The Nature Conservancy</a>
+</div>
+
+
+
+<div >
+
+  <div class="single-intro-container">
+
+    
+
+    <h1 class="single-title">🚀 Automating Geospatial Data Processing for The Nature Conservancy</h1>
+    
+
+    
+
+    <p class="single-readtime">
+      
+      
+      
+      <time datetime="2025-02-01T12:00:00&#43;00:00">February 1, 2025</time>
+      
+
+      
+    </p>
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div class="single-content">
+    <p>🌍 <strong>Scaling Environmental Data Processing with a Custom CLI Tool</strong></p>
+<p>In collaboration with <strong>The Nature Conservancy (TNC)</strong>, I developed an <strong>end-to-end geospatial data pipeline</strong><br>
+to process <strong>large-scale satellite imagery</strong> used for <strong>environmental conservation and land monitoring</strong>.</p>
+<p>Handling <strong>terabytes of satellite data</strong> efficiently is challenging—<br>
+so I built a <strong>CLI tool</strong> that automates <strong>data retrieval, preprocessing, and visualization</strong><br>
+to help conservationists work with geospatial data at scale.</p>
+<hr>
+<h2 class="heading" id="-the-problem-scaling-environmental-data-processing">
+  <strong>⚡ The Problem: Scaling Environmental Data Processing</strong>
+  <a href="#-the-problem-scaling-environmental-data-processing">#</a>
+</h2>
+<p>Environmental research often relies on <strong>geospatial data</strong> from sources like <strong>NASA, Sentinel, and Landsat</strong>.<br>
+However, working with <strong>large-scale raster imagery</strong> presents multiple challenges:</p>
+<h3 class="heading" id="-challenges-faced">
+  <strong>🌎 Challenges Faced</strong>
+  <a href="#-challenges-faced">#</a>
+</h3>
+<ul>
+<li><strong>⚡ Large Data Volumes</strong> → Satellite imagery datasets <strong>grow exponentially</strong> (often 100+ GB per week).</li>
+<li><strong>📍 Extracting Only Relevant Data</strong> → We only need <strong>specific AOIs</strong> (Areas of Interest) instead of full imagery tiles.</li>
+<li><strong>🛠️ Complex Processing Pipelines</strong> → Merging, normalizing, and analyzing imagery takes <strong>time &amp; computational resources</strong>.</li>
+<li><strong>⏳ Manual &amp; Inefficient Workflows</strong> → Many researchers rely on <strong>manual downloads and preprocessing</strong>, slowing analysis.</li>
+</ul>
+<p>To solve these issues, I built a <strong>custom CLI tool</strong> to automate geospatial data ingestion, transformation, and management.</p>
+<hr>
+<h2 class="heading" id="-the-solution-a-custom-cli-tool">
+  <strong>🛠 The Solution: A Custom CLI Tool</strong>
+  <a href="#-the-solution-a-custom-cli-tool">#</a>
+</h2>
+<p>To <strong>streamline</strong> data workflows, I designed and built a <strong>command-line interface (CLI) tool</strong><br>
+that <strong>fetches, processes, and organizes satellite imagery automatically</strong>.</p>
+<h3 class="heading" id="-cli-tool-features">
+  <strong>✨ CLI Tool Features</strong>
+  <a href="#-cli-tool-features">#</a>
+</h3>
+<p>✅ <strong>Automated Satellite Image Retrieval</strong> → Fetches and updates datasets on a schedule<br>
+✅ <strong>Efficient Clipping &amp; Merging</strong> → Uses <strong>GDAL &amp; Rasterio</strong> to extract relevant AOIs<br>
+✅ <strong>Time-Based Analysis</strong> → Enables comparisons across multiple time periods<br>
+✅ <strong>Simple One-Command Execution</strong> → Researchers can trigger processing instantly:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>geo-cli process --aoi california --start-date 2024-01-01 --end-date 2024-02-01
+</span></span></code></pre></div><p>✅ <strong>Multi-Format Output</strong> → Supports <strong>TIFF, PNG, and GeoJSON</strong> for compatibility with GIS tools<br>
+✅ <strong>Scalability</strong> → Designed to handle <strong>multi-terabyte datasets efficiently</strong></p>
+<hr>
+<h2 class="heading" id="-how-it-works">
+  <strong>🔍 How It Works</strong>
+  <a href="#-how-it-works">#</a>
+</h2>
+<h3 class="heading" id="-step-1-data-acquisition">
+  <strong>📡 Step 1: Data Acquisition</strong>
+  <a href="#-step-1-data-acquisition">#</a>
+</h3>
+<p>The CLI tool connects to <strong>public satellite APIs (Sentinel, Landsat, NASA)</strong> and fetches imagery<br>
+based on <strong>defined time ranges and AOIs</strong>.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>geo-cli fetch --source sentinel --aoi <span style="color:#666;font-style:italic">&#34;california&#34;</span> --date-range <span style="color:#666;font-style:italic">&#34;2024-01-01:2024-02-01&#34;</span>
+</span></span></code></pre></div><p>✔ Downloads <strong>only relevant tiles</strong>, avoiding unnecessary storage costs.</p>
+<hr>
+<h3 class="heading" id="-step-2-data-processing">
+  <strong>🛠️ Step 2: Data Processing</strong>
+  <a href="#-step-2-data-processing">#</a>
+</h3>
+<p>Once images are retrieved, the tool <strong>automatically processes them</strong>:</p>
+<ul>
+<li><strong>Clipping &amp; Merging</strong> → Uses <strong>GDAL</strong> to trim excess data and combine necessary tiles.</li>
+<li><strong>Normalization &amp; Correction</strong> → Applies preprocessing to adjust <strong>brightness, color, and resolution</strong>.</li>
+<li><strong>Multi-Timestep Comparison</strong> → Aligns images from <strong>different dates</strong> for change detection.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>geo-cli process --aoi california --start-date 2024-01-01 --end-date 2024-02-01
+</span></span></code></pre></div><p>✔ This step transforms raw data into <strong>clean, structured geospatial outputs</strong>.</p>
+<hr>
+<h3 class="heading" id="-step-3-data-storage--access">
+  <strong>🗄️ Step 3: Data Storage &amp; Access</strong>
+  <a href="#-step-3-data-storage--access">#</a>
+</h3>
+<p>Processed imagery is <strong>stored locally</strong> or uploaded to <strong>cloud storage (AWS/GCP)</strong> for accessibility.<br>
+Additionally, results can be exported in <strong>GeoJSON</strong> format for GIS visualization.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>geo-cli <span style="font-weight:bold;font-style:italic">export</span> --format geojson --output <span style="color:#666;font-style:italic">&#34;processed_data/&#34;</span>
+</span></span></code></pre></div><p>✔ Researchers can now access and analyze <strong>clean geospatial data</strong> instantly.</p>
+<hr>
+<h2 class="heading" id="-impact-why-this-matters">
+  <strong>📌 Impact: Why This Matters</strong>
+  <a href="#-impact-why-this-matters">#</a>
+</h2>
+<p>This CLI tool significantly <strong>reduces manual effort</strong> and improves <strong>data processing efficiency</strong>,<br>
+allowing <strong>The Nature Conservancy</strong> to <strong>focus on insights instead of engineering bottlenecks</strong>.</p>
+<h3 class="heading" id="-key-benefits">
+  <strong>🚀 Key Benefits</strong>
+  <a href="#-key-benefits">#</a>
+</h3>
+<p>🔹 <strong>Automation</strong> → Eliminates <strong>time-consuming manual processing</strong><br>
+🔹 <strong>Faster Analysis</strong> → Allows <strong>real-time environmental monitoring</strong><br>
+🔹 <strong>Scalability</strong> → Designed to <strong>handle increasing data volumes</strong><br>
+🔹 <strong>Better Data Accessibility</strong> → Structured outputs make <strong>geospatial analysis easier</strong></p>
+<hr>
+<h2 class="heading" id="-next-steps--future-improvements">
+  <strong>🔮 Next Steps &amp; Future Improvements</strong>
+  <a href="#-next-steps--future-improvements">#</a>
+</h2>
+<p>While the CLI tool already solves <strong>major pain points</strong>, I plan to expand its capabilities:</p>
+<h3 class="heading" id="-1-integrating-machine-learning">
+  <strong>🧠 1. Integrating Machine Learning</strong>
+  <a href="#-1-integrating-machine-learning">#</a>
+</h3>
+<ul>
+<li><strong>Land Use Classification</strong> → Use ML to detect <strong>deforestation, urban expansion, and water changes</strong></li>
+<li><strong>Anomaly Detection</strong> → Flag environmental changes for further investigation</li>
+</ul>
+<h3 class="heading" id="-2-cloud-based-processing">
+  <strong>☁️ 2. Cloud-Based Processing</strong>
+  <a href="#-2-cloud-based-processing">#</a>
+</h3>
+<ul>
+<li>Move <strong>heavy computations to AWS/GCP</strong>, reducing local hardware requirements</li>
+<li>Enable <strong>serverless, on-demand processing</strong></li>
+</ul>
+<h3 class="heading" id="-3-enhanced-user-customization">
+  <strong>🗺️ 3. Enhanced User Customization</strong>
+  <a href="#-3-enhanced-user-customization">#</a>
+</h3>
+<ul>
+<li>Support for <strong>custom AOIs</strong> beyond predefined locations</li>
+<li>Add <strong>interactive map-based input for non-technical users</strong></li>
+</ul>
+<hr>
+<h2 class="heading" id="-open-source--contributions">
+  <strong>📂 Open Source &amp; Contributions</strong>
+  <a href="#-open-source--contributions">#</a>
+</h2>
+<p>I plan to <strong>open-source this CLI tool</strong> so others working with geospatial data<br>
+can leverage it for <strong>research, conservation, and environmental analytics</strong>.</p>
+<p>🔗 <strong><a href="#">GitHub Repo (Coming Soon)</a></strong><br>
+📄 <strong><a href="#">Read More About The Project</a></strong></p>
+<hr>
+<h2 class="heading" id="-final-thoughts">
+  <strong>💡 Final Thoughts</strong>
+  <a href="#-final-thoughts">#</a>
+</h2>
+<p>This project reinforced the <strong>power of automation and scalable data pipelines</strong> in solving <strong>real-world environmental challenges</strong>.</p>
+<p>By leveraging <strong>big data, distributed computing, and efficient ETL workflows</strong>,<br>
+we can <strong>process, analyze, and act on geospatial insights faster than ever.</strong></p>
+<p>🚀 <strong>Excited to keep building, optimizing, and expanding this tool!</strong></p>
+<hr>
+
+    
+  </div>
+
+  
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  <footer>
+    
+
+    
+    <p>Powered by
+        <a href="https://gohugo.io/">Hugo</a>
+        and
+        <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+    </p>
+    
+    
+    
+
+
+  </footer>
+
+  
+
+</body>
+
+<script>
+
+  function isAuto() {
+    return document.body.classList.contains("auto");
+  }
+
+  function setTheme() {
+    if (!isAuto()) {
+      return
+    }
+
+    document.body.classList.remove("auto");
+    let cls = "light";
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      cls = "dark";
+    }
+
+    document.body.classList.add(cls);
+  }
+
+  function invertBody() {
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+  }
+
+  if (isAuto()) {
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(invertBody);
+  }
+
+  setTheme();
+
+</script>
+
+<script defer src="/js/copy-code.js"></script>
+</html>
