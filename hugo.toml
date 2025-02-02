@@ -9,19 +9,21 @@ theme = "typo"
   github = "https://github.com/bitterfq"
   showLastUpdated = true
   
-  homeIntroTitle = "Hey, I'm Aman! "
+  homeIntroTitle = "Hey, I'm Aman!"
   homeIntroContent = """
-  I'm a software engineer and **Master's student at the University of San Francisco (USF)**,  deeply focused on **data-driven systems, algorithms, and distributed computing**.  
-  
-  I thrive at the intersection of **large-scale data processing, geospatial analysis, and automation**,  building solutions that transform raw information into actionable insights.
+  I'm a **data engineer & data scientist**, currently pursuing my **Master’s at USF**,  
+  where I focus on **scalable data systems, distributed computing, and geospatial analytics**.  
 
-  Currently, I'm working on projects involving **data structures, information retrieval,  
-  and geospatial processing**, pushing the boundaries of **efficiency and scalability**.  
-  This is my corner of the internet.
+  I work at the intersection of **big data, machine learning, and automation**,  
+  building systems that transform **raw data into real-world insights**.  
+
+  Right now, I’m developing **high-throughput data pipelines, working with geospatial ML,  and pushing the limits of efficiency in large-scale data processing.**  
+
   """
 
 
-  # Collection to display on home
+
+# Collection to display on home
 homeCollectionTitle = 'Posts'
 homeCollection = 'posts'
 
@@ -48,6 +50,11 @@ url = "https://github.com/bitterfq"
 name = "home"
 url = "/"
 
+[[params.menu]]
+name = "resume"
+url = "/resume.pdf"
+weight = 3
+  
 [[params.menu]]
 name = "posts"
 url = "/posts"
