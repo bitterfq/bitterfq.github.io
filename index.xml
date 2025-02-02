@@ -1,3 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on My Tech Blog</title><link>https://bitterfq.github.io/</link><description>Recent content in Home on My Tech Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2025 12:00:00 +0000</lastBuildDate><atom:link href="https://bitterfq.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Test Post</title><link>https://bitterfq.github.io/posts/my-second-post/</link><pubDate>Sat, 01 Feb 2025 12:00:00 +0000</pubDate><guid>https://bitterfq.github.io/posts/my-second-post/</guid><description>&lt;p>🚀 &lt;strong>This is a test post!&lt;/strong>&lt;br>
-If you&amp;rsquo;re seeing this, your Hugo setup is working &lt;strong>perfectly&lt;/strong>.&lt;br>
-Now, try adding more posts and customizing your blog!&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on BitterFq&#39;s Corner 🍻</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on BitterFq&#39;s Corner 🍻</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Feb 2025 12:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 01 Feb 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h3 class=&#34;heading&#34; id=&#34;hey-im-aman&#34;&gt;&#xA;  Hey, I&amp;rsquo;m Aman!&#xA;  &lt;a href=&#34;#hey-im-aman&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a &lt;strong&gt;Master&amp;rsquo;s student at the University of San Francisco (USF)&lt;/strong&gt;,&lt;br&gt;&#xA;with a deep interest in &lt;strong&gt;data-driven systems, algorithms, and distributed computing&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I work on &lt;strong&gt;large-scale data processing, geospatial analysis, and automation&lt;/strong&gt;,&lt;br&gt;&#xA;building tools that transform raw information into &lt;strong&gt;actionable insights&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This blog is a collection of my work—deep dives into &lt;strong&gt;data-heavy applications,&lt;br&gt;&#xA;complex systems, and the tech that powers them&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h4 class=&#34;heading&#34; id=&#34;-want-to-connect&#34;&gt;&#xA;  💡 Want to connect?&#xA;  &lt;a href=&#34;#-want-to-connect&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;📂 &lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/bitterfq&#34;&gt;bitterfq&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;💬 &lt;strong&gt;Reach out:&lt;/strong&gt; &lt;a href=&#34;amndp64@gmail.com&#34;&gt;Email&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Test Post</title>
+      <link>http://localhost:1313/posts/my-second-post/</link>
+      <pubDate>Sat, 01 Feb 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-second-post/</guid>
+      <description>&lt;p&gt;🚀 &lt;strong&gt;This is a test post!&lt;/strong&gt;&lt;br&gt;&#xA;If you&amp;rsquo;re seeing this, your Hugo setup is working &lt;strong&gt;perfectly&lt;/strong&gt;.&lt;br&gt;&#xA;Now, try adding more posts and customizing your blog!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
