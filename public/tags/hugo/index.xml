@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on BitterFq&#39;s Corner 🍻</title>
+    <link>http://localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on BitterFq&#39;s Corner 🍻</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Feb 2025 18:28:04 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating Blog Comments with AI: GPT4All &amp; Giscus Integration</title>
+      <link>http://localhost:1313/posts/automating-blog-comments/</link>
+      <pubDate>Mon, 03 Feb 2025 18:28:04 -0800</pubDate>
+      <guid>http://localhost:1313/posts/automating-blog-comments/</guid>
+      <description>&lt;p&gt;What if your blog could automatically generate thoughtful comments for every post? I built a bot that does just that—using &lt;strong&gt;GPT4All for offline AI&lt;/strong&gt; and &lt;strong&gt;Giscus for seamless GitHub integration&lt;/strong&gt;. No cloud APIs, no recurring costs—just smart automation that engages with your blog posts.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

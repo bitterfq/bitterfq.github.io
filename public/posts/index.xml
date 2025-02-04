@@ -6,8 +6,15 @@
     <description>Recent content in Posts on BitterFq&#39;s Corner 🍻</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Feb 2025 01:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2025 18:28:04 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🚀 Automating Blog Comments with AI: GPT4All &amp; Giscus Integration</title>
+      <link>http://localhost:1313/posts/automating-blog-comments/</link>
+      <pubDate>Mon, 03 Feb 2025 18:28:04 -0800</pubDate>
+      <guid>http://localhost:1313/posts/automating-blog-comments/</guid>
+      <description>&lt;h2 class=&#34;heading&#34; id=&#34;-introduction&#34;&gt;&#xA;  &lt;strong&gt;🔥 Introduction&lt;/strong&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#-introduction&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I recently built an &lt;strong&gt;AI-powered comment bot&lt;/strong&gt; for my Hugo blog that:&lt;br&gt;&#xA;✅ &lt;strong&gt;Generates meaningful comments&lt;/strong&gt; on blog posts.&lt;br&gt;&#xA;✅ &lt;strong&gt;Uses GPT4All&lt;/strong&gt; for &lt;strong&gt;fully offline AI generation&lt;/strong&gt; (no OpenAI API fees).&lt;br&gt;&#xA;✅ &lt;strong&gt;Posts comments to GitHub Discussions via Giscus&lt;/strong&gt; for seamless integration.&lt;/p&gt;&#xA;&lt;p&gt;This project automates reader engagement and creates an interactive discussion experience &lt;strong&gt;without manual effort&lt;/strong&gt;. Here’s how it works.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;-the-goal&#34;&gt;&#xA;  &lt;strong&gt;🎯 The Goal&lt;/strong&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#-the-goal&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;The main objectives were:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>On the Lightness of Being</title>
       <link>http://localhost:1313/posts/lightness_of_being/</link>
