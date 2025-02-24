@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://bitterfq.github.io/about/</loc>
     <lastmod>2025-02-24T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://bitterfq.github.io/posts/</loc>
     <lastmod>2025-02-24T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://bitterfq.github.io/</loc>
     <lastmod>2025-02-24T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/scrapping-ufo-data/</loc>
+    <loc>https://bitterfq.github.io/posts/scrapping-ufo-data/</loc>
     <lastmod>2025-02-24T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/resume/</loc>
+    <loc>https://bitterfq.github.io/resume/</loc>
     <lastmod>2025-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/automating-blog-comments/</loc>
+    <loc>https://bitterfq.github.io/posts/automating-blog-comments/</loc>
     <lastmod>2025-02-03T18:28:04-08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tnc-cli-tool/</loc>
+    <loc>https://bitterfq.github.io/posts/tnc-cli-tool/</loc>
     <lastmod>2025-02-01T14:00:00-08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://bitterfq.github.io/tags/</loc>
   </url>
 </urlset>
