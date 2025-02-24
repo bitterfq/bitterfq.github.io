@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on BitterFq&#39;s Corner 🍻</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:36617/</link>
     <description>Recent content in Home on BitterFq&#39;s Corner 🍻</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Feb 2025 09:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:36617/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:36617/about/</link>
       <pubDate>Mon, 24 Feb 2025 09:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:36617/about/</guid>
       <description>&lt;h2 class=&#34;heading&#34; id=&#34;-hey-im-aman&#34;&gt;&#xA;  👋 Hey, I&amp;rsquo;m Aman!&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#-hey-im-aman&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a &lt;strong&gt;data engineer &amp;amp; data scientist&lt;/strong&gt;, currently pursuing my &lt;strong&gt;Master’s at the University of San Francisco&lt;/strong&gt;. My work revolves around &lt;strong&gt;scalable data systems, distributed computing, and geospatial analytics&lt;/strong&gt;—where I leverage large-scale datasets to generate &lt;strong&gt;real-world insights&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;-what-i-do&#34;&gt;&#xA;  💡 What I Do&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#-what-i-do&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;🔹 &lt;strong&gt;Big Data &amp;amp; ML Engineering&lt;/strong&gt; – I build &lt;strong&gt;high-throughput data pipelines&lt;/strong&gt; and optimize &lt;strong&gt;large-scale data processing&lt;/strong&gt;.&lt;br&gt;&#xA;🔹 &lt;strong&gt;Geospatial Analytics&lt;/strong&gt; – I work on &lt;strong&gt;geospatial ML applications&lt;/strong&gt;, leveraging &lt;strong&gt;satellite imagery, remote sensing data, and spatial databases&lt;/strong&gt;.&lt;br&gt;&#xA;🔹 &lt;strong&gt;Automation &amp;amp; Efficiency&lt;/strong&gt; – I streamline &lt;strong&gt;data workflows&lt;/strong&gt; and optimize computational efficiency for &lt;strong&gt;scalable AI applications&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Scraping UFO Data: A Journey into the Unknown</title>
-      <link>http://localhost:1313/posts/scrapping-ufo-data/</link>
+      <link>http://localhost:36617/posts/scrapping-ufo-data/</link>
       <pubDate>Mon, 24 Feb 2025 09:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/scrapping-ufo-data/</guid>
+      <guid>http://localhost:36617/posts/scrapping-ufo-data/</guid>
       <description>&lt;p&gt;Have you ever gazed up at the night sky and wondered about unexplained lights or mysterious sightings? In my latest project, I set out to collect &lt;strong&gt;UFO sightings data&lt;/strong&gt; from public websites and transform it into a usable dataset for analysis.&lt;/p&gt;&#xA;&lt;p&gt;This post walks you through how I built a web scraper using &lt;strong&gt;Python&lt;/strong&gt;—transforming raw HTML into a &lt;strong&gt;neat CSV file&lt;/strong&gt; ready for data exploration.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resume</title>
-      <link>http://localhost:1313/resume/</link>
+      <link>http://localhost:36617/resume/</link>
       <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resume/</guid>
+      <guid>http://localhost:36617/resume/</guid>
       <description>&lt;p&gt;📄 &lt;strong&gt;Download my resume:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;../resume.pdf&#34;&gt;Click here&lt;/a&gt; to download my latest resume.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automating Blog Comments with AI: GPT4All &amp; Giscus Integration</title>
-      <link>http://localhost:1313/posts/automating-blog-comments/</link>
+      <link>http://localhost:36617/posts/automating-blog-comments/</link>
       <pubDate>Mon, 03 Feb 2025 18:28:04 -0800</pubDate>
-      <guid>http://localhost:1313/posts/automating-blog-comments/</guid>
+      <guid>http://localhost:36617/posts/automating-blog-comments/</guid>
       <description>&lt;p&gt;Engagement is crucial for any blog, but manually responding to every post can be time-consuming. What if your blog could generate thoughtful comments automatically?&lt;/p&gt;&#xA;&lt;p&gt;I developed a bot that does exactly that—leveraging &lt;strong&gt;GPT4All&lt;/strong&gt; for offline AI-generated comments and &lt;strong&gt;Giscus&lt;/strong&gt; for seamless integration with GitHub Discussions. This solution eliminates reliance on cloud-based APIs, ensuring full privacy, cost-efficiency, and automation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🚀 Automating Geospatial Data for The Nature Conservancy</title>
-      <link>http://localhost:1313/posts/tnc-cli-tool/</link>
+      <link>http://localhost:36617/posts/tnc-cli-tool/</link>
       <pubDate>Sat, 01 Feb 2025 14:00:00 -0800</pubDate>
-      <guid>http://localhost:1313/posts/tnc-cli-tool/</guid>
+      <guid>http://localhost:36617/posts/tnc-cli-tool/</guid>
       <description>&lt;p&gt;🌍 &lt;strong&gt;Scaling Environmental Data Processing with a Custom CLI Tool&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;As part of my work with &lt;strong&gt;The Nature Conservancy (TNC)&lt;/strong&gt;, I developed a &lt;strong&gt;custom CLI tool&lt;/strong&gt; to &lt;strong&gt;automate geospatial data processing&lt;/strong&gt;. This tool streamlines the &lt;strong&gt;retrieval, transformation, and analysis of satellite imagery and GIS data&lt;/strong&gt;, enabling conservationists to focus on &lt;strong&gt;real-world environmental impact&lt;/strong&gt; rather than tedious manual workflows.&lt;/p&gt;</description>
     </item>
   </channel>
