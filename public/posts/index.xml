@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on BitterFq&#39;s Corner 🍻</title>
-    <link>https://bitterfq.github.io/posts/</link>
+    <link>http://localhost:33795/posts/</link>
     <description>Recent content in Home on BitterFq&#39;s Corner 🍻</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 24 Feb 2025 09:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bitterfq.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:33795/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scraping UFO Data: A Journey into the Unknown</title>
-      <link>https://bitterfq.github.io/posts/scrapping-ufo-data/</link>
+      <link>http://localhost:33795/posts/scrapping-ufo-data/</link>
       <pubDate>Mon, 24 Feb 2025 09:00:00 +0000</pubDate>
-      <guid>https://bitterfq.github.io/posts/scrapping-ufo-data/</guid>
+      <guid>http://localhost:33795/posts/scrapping-ufo-data/</guid>
       <description>&lt;p&gt;Have you ever gazed up at the night sky and wondered about unexplained lights or mysterious sightings? In my latest project, I set out to collect &lt;strong&gt;UFO sightings data&lt;/strong&gt; from public websites and transform it into a usable dataset for analysis.&lt;/p&gt;&#xA;&lt;p&gt;This post walks you through how I built a web scraper using &lt;strong&gt;Python&lt;/strong&gt;—transforming raw HTML into a &lt;strong&gt;neat CSV file&lt;/strong&gt; ready for data exploration.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automating Blog Comments with AI: GPT4All &amp; Giscus Integration</title>
-      <link>https://bitterfq.github.io/posts/automating-blog-comments/</link>
+      <link>http://localhost:33795/posts/automating-blog-comments/</link>
       <pubDate>Mon, 03 Feb 2025 18:28:04 -0800</pubDate>
-      <guid>https://bitterfq.github.io/posts/automating-blog-comments/</guid>
+      <guid>http://localhost:33795/posts/automating-blog-comments/</guid>
       <description>&lt;p&gt;Engagement is crucial for any blog, but manually responding to every post can be time-consuming. What if your blog could generate thoughtful comments automatically?&lt;/p&gt;&#xA;&lt;p&gt;I developed a bot that does exactly that—leveraging &lt;strong&gt;GPT4All&lt;/strong&gt; for offline AI-generated comments and &lt;strong&gt;Giscus&lt;/strong&gt; for seamless integration with GitHub Discussions. This solution eliminates reliance on cloud-based APIs, ensuring full privacy, cost-efficiency, and automation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🚀 Automating Geospatial Data for The Nature Conservancy</title>
-      <link>https://bitterfq.github.io/posts/tnc-cli-tool/</link>
+      <link>http://localhost:33795/posts/tnc-cli-tool/</link>
       <pubDate>Sat, 01 Feb 2025 14:00:00 -0800</pubDate>
-      <guid>https://bitterfq.github.io/posts/tnc-cli-tool/</guid>
+      <guid>http://localhost:33795/posts/tnc-cli-tool/</guid>
       <description>&lt;p&gt;🌍 &lt;strong&gt;Scaling Environmental Data Processing with a Custom CLI Tool&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;As part of my work with &lt;strong&gt;The Nature Conservancy (TNC)&lt;/strong&gt;, I developed a &lt;strong&gt;custom CLI tool&lt;/strong&gt; to &lt;strong&gt;automate geospatial data processing&lt;/strong&gt;. This tool streamlines the &lt;strong&gt;retrieval, transformation, and analysis of satellite imagery and GIS data&lt;/strong&gt;, enabling conservationists to focus on &lt;strong&gt;real-world environmental impact&lt;/strong&gt; rather than tedious manual workflows.&lt;/p&gt;</description>
     </item>
   </channel>
