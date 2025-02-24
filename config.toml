@@ -3,17 +3,13 @@ languageCode = 'en-us'
 title = "BitterFq's Corner 🍻"
 theme = 'typo'
 
-<<<<<<< HEAD
 # Google Analytics (if you have one)
 googleAnalytics = "G-XXXXXXXXXX"
 
-=======
->>>>>>> main
 [taxonomies]
 tag = 'tags'
 
 [params]
-<<<<<<< HEAD
 # Meta description (SEO)
 description = "A Tech Blog on Data, AI, and Software Development"
 
@@ -25,23 +21,12 @@ hideHeader = false
 # Homepage Introduction (FIXED)
 homeIntroTitle = "Hey, I'm Aman!"
 homeIntroContent = '''
-=======
-description = "A Tech Blog by Aman"
-theme = 'auto'
-colorPalette = 'default'
-hideHeader = false
-
-# Homepage Introduction
-homeIntroTitle = "Hey, I'm Aman!"
-homeIntroContent = """
->>>>>>> main
 I’m a **data engineer & data scientist**, currently pursuing my **Master’s at USF**,
 where I focus on **scalable data systems, distributed computing, and geospatial analytics**.
 
 I work at the intersection of **big data, machine learning, and automation**,
 building systems that transform **raw data into real-world insights**.
 
-<<<<<<< HEAD
 Right now, I’m developing **high-throughput data pipelines, working with geospatial ML,**
 and pushing the limits of **efficiency in large-scale data processing**.
 '''
@@ -82,36 +67,15 @@ name = "twitter"
 url = "https://twitter.com/yourhandle"
 
 # Main menu navigation
-=======
-Right now, I’m developing **high-throughput data pipelines, working with geospatial ML**, and pushing the limits of efficiency in **large-scale data processing**.
-"""
-
-# Homepage Collection
-homeCollectionTitle = "Posts"
-homeCollection = "posts"
-
-# Pagination (Increase to show all posts on homepage)
-paginationSize = 100  # Set to 100 so all posts appear at once
-
-# Show post summaries on lists
-listSummaries = true
-listDateFormat = "2 Jan 2006"
-
-
-# Main menu pages
->>>>>>> main
 [[params.menu]]
 name = "home"
 url = "/"
 
 [[params.menu]]
-<<<<<<< HEAD
 name = "posts"
 url = "/posts"
 
 [[params.menu]]
-=======
->>>>>>> main
 name = "about"
 url = "/about"
 
@@ -119,40 +83,7 @@ url = "/about"
 name = "resume"
 url = "/resume.pdf"
 
-<<<<<<< HEAD
 # Syntax highlight for code blocks
 [markup]
 [markup.highlight]
 style = 'algol'
-=======
-[[params.menu]]
-name = "posts"
-url = "/posts"
-
-# Social icons
-[[params.social]]
-name = "github"
-url = "https://github.com/bitterfq"
-
-[[params.social]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/bitterfq/"
-
-
-
-# Giscus comments integration
-[params.giscus]
-enable = true
-repo = "bitterfq/bitterfq.github.io"
-repoid = "R_kgDONy82nw"
-category = "Announcements"
-categoryid = "DIC_kwDONy82n84CmoPb"
-mapping = "pathname"
-theme = "preferred_color_scheme"
-
-# Hugo Markup Configuration
-[markup]
-[markup.highlight]
-style = 'algol'
-
->>>>>>> main
