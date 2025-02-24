@@ -6,6 +6,9 @@
     <description>Recent content in Home on BitterFq&#39;s Corner 🍻</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+<<<<<<< HEAD
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+=======
     <lastBuildDate>Mon, 24 Feb 2025 09:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -43,5 +46,6 @@
       <guid>http://localhost:1313/posts/tnc-cli-tool/</guid>
       <description>&lt;p&gt;🌍 &lt;strong&gt;Scaling Environmental Data Processing with a Custom CLI Tool&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;As part of my work with &lt;strong&gt;The Nature Conservancy (TNC)&lt;/strong&gt;, I developed a &lt;strong&gt;custom CLI tool&lt;/strong&gt; to &lt;strong&gt;automate geospatial data processing&lt;/strong&gt;. This tool streamlines the &lt;strong&gt;retrieval, transformation, and analysis of satellite imagery and GIS data&lt;/strong&gt;, enabling conservationists to focus on &lt;strong&gt;real-world environmental impact&lt;/strong&gt; rather than tedious manual workflows.&lt;/p&gt;</description>
     </item>
+>>>>>>> main
   </channel>
 </rss>
