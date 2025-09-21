@@ -21,14 +21,16 @@ hideHeader = false
 # Homepage Introduction (FIXED)
 homeIntroTitle = "Hey, I'm Aman!"
 homeIntroContent = '''
-I’m a **data engineer & data scientist**, currently pursuing my **Master’s at USF**,
-where I focus on **scalable data systems, distributed computing, and geospatial analytics**.
+I’m a **Data Engineer**, currently working at a stealth startup,
+where I focus on **scalable data systems, distributed computing, and backend systems**.
 
 I work at the intersection of **big data, machine learning, and automation**,
 building systems that transform **raw data into real-world insights**.
 
-Right now, I’m developing **high-throughput data pipelines, working with geospatial ML,**
-and pushing the limits of **efficiency in large-scale data processing**.
+Some of my previous projects have been focused on **real-time data processing,
+and building ETL pipelines** for places like The Nature Conservancy and Meta. 
+
+When I’m not coding, I enjoy **hiking, photography, and Muay Thai**.
 '''
 
 # Collection displayed on home page
