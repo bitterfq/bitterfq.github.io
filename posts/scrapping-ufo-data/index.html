@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+<link rel="icon" type="image/ico" href="https://bitterfq.github.io//favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bitterfq.github.io//favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bitterfq.github.io//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://bitterfq.github.io//android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://bitterfq.github.io//apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    Scraping UFO Data: A Journey into the Unknown | BitterFq&#39;s Corner 🍻
+    
+</title>
+
+<link rel="canonical" href="https://bitterfq.github.io/posts/scrapping-ufo-data/"/>
+
+<meta property="og:url" content="https://bitterfq.github.io/posts/scrapping-ufo-data/">
+  <meta property="og:site_name" content="BitterFq&#39;s Corner 🍻">
+  <meta property="og:title" content="Scraping UFO Data: A Journey into the Unknown">
+  <meta property="og:description" content="Have you ever gazed up at the night sky and wondered about unexplained lights or mysterious sightings? In my latest project, I set out to collect UFO sightings data from public websites and transform it into a usable dataset for analysis.
+This post walks you through how I built a web scraper using Python—transforming raw HTML into a neat CSV file ready for data exploration.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-24T09:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-24T09:00:00+00:00">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.4d83d9d131fa58e4a3582b029a9d295c34033e4132d049b0e16fa8d1e9ddfebf.css" media="all">
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="https://bitterfq.github.io/">BitterFq&#39;s Corner 🍻</a>
+    </h1>
+
+    <div class="flex">
+        
+
+        
+        
+      
+        <p class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/posts" >
+                /posts
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/about" >
+                /about
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/resume.pdf" >
+                /resume
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+
+<div class="breadcrumbs">
+    
+    <a href="/">Home</a>
+    <span class="breadcrumbs-separator"> / </span>
+    
+    <a href="/posts/">Home</a>
+    <span class="breadcrumbs-separator"> / </span>
+    
+    <a href="/posts/scrapping-ufo-data/">Scraping UFO Data: A Journey into the Unknown</a>
+</div>
+
+
+
+<div >
+
+  <div class="single-intro-container">
+
+    
+
+    <h1 class="single-title">Scraping UFO Data: A Journey into the Unknown</h1>
+    
+
+    
+
+    <p class="single-readtime">
+      
+      
+      
+      <time datetime="2025-02-24T09:00:00&#43;00:00">February 24, 2025</time>
+      
+
+      
+    </p>
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div class="single-content">
+    <p>Have you ever gazed up at the night sky and wondered about unexplained lights or mysterious sightings? In my latest project, I set out to collect <strong>UFO sightings data</strong> from public websites and transform it into a usable dataset for analysis.</p>
+<p>This post walks you through how I built a web scraper using <strong>Python</strong>—transforming raw HTML into a <strong>neat CSV file</strong> ready for data exploration.</p>
+<h2 class="heading" id="-setting-up-the-environment">
+  <strong>📌 Setting Up the Environment</strong>
+  <a class="anchor" href="#-setting-up-the-environment">#</a>
+</h2>
+<p>Before diving into the code, I set up my development environment with the necessary packages.</p>
+<h3 class="heading" id="-libraries-used">
+  <strong>🛠️ Libraries Used</strong>
+  <a class="anchor" href="#-libraries-used">#</a>
+</h3>
+<ul>
+<li><strong>Selenium</strong> → for browser automation</li>
+<li><strong>BeautifulSoup</strong> → for parsing HTML</li>
+<li><strong>Pandas</strong> → for data manipulation</li>
+</ul>
+<p>Install the required packages using:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install selenium beautifulsoup4 pandas
+</span></span></code></pre></div><hr>
+<h2 class="heading" id="-the-scraping-process">
+  <strong>🔍 The Scraping Process</strong>
+  <a class="anchor" href="#-the-scraping-process">#</a>
+</h2>
+<p>The scraper does the following:
+✅ Visits a UFO sightings website<br>
+✅ Extracts data from each page<br>
+✅ Handles pagination<br>
+✅ Saves data in a structured format</p>
+<hr>
+<h3 class="heading" id="1-initializing-the-web-driver">
+  <strong>1️⃣ Initializing the Web Driver</strong>
+  <a class="anchor" href="#1-initializing-the-web-driver">#</a>
+</h3>
+<p>Since the website is dynamic, I used <strong>Selenium</strong> to navigate and load content.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">from</span> <span style="color:#666;font-weight:bold;font-style:italic">selenium</span> <span style="font-weight:bold;text-decoration:underline">import</span> webdriver
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>driver = webdriver.Chrome()
+</span></span><span style="display:flex;"><span>driver.get(<span style="color:#666;font-style:italic">&#34;https://nuforc.org/subndx/?id=highlights&#34;</span>)
+</span></span></code></pre></div><hr>
+<h3 class="heading" id="2-extracting-data-using-beautifulsoup">
+  <strong>2️⃣ Extracting Data Using BeautifulSoup</strong>
+  <a class="anchor" href="#2-extracting-data-using-beautifulsoup">#</a>
+</h3>
+<p>After loading the page, we extract relevant data using <strong>BeautifulSoup</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">from</span> <span style="color:#666;font-weight:bold;font-style:italic">bs4</span> <span style="font-weight:bold;text-decoration:underline">import</span> BeautifulSoup
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>soup = BeautifulSoup(driver.page_source, <span style="color:#666;font-style:italic">&#34;html.parser&#34;</span>)
+</span></span><span style="display:flex;"><span>rows = soup.find_all(<span style="color:#666;font-style:italic">&#34;tr&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">for</span> row <span style="font-weight:bold">in</span> rows:
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;font-style:italic">print</span>(row.text)
+</span></span></code></pre></div><hr>
+<h3 class="heading" id="3-handling-pagination">
+  <strong>3️⃣ Handling Pagination</strong>
+  <a class="anchor" href="#3-handling-pagination">#</a>
+</h3>
+<p>Since UFO reports span multiple pages, we <strong>loop through all pages</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">import</span> <span style="color:#666;font-weight:bold;font-style:italic">time</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">while</span> <span style="font-weight:bold;text-decoration:underline">True</span>:
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">try</span>:
+</span></span><span style="display:flex;"><span>        next_button = driver.find_element_by_css_selector(<span style="color:#666;font-style:italic">&#34;a.paginate_button.next&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold;text-decoration:underline">if</span> <span style="color:#666;font-style:italic">&#34;disabled&#34;</span> <span style="font-weight:bold">in</span> next_button.get_attribute(<span style="color:#666;font-style:italic">&#34;class&#34;</span>):
+</span></span><span style="display:flex;"><span>            <span style="font-weight:bold;text-decoration:underline">break</span>
+</span></span><span style="display:flex;"><span>        next_button.click()
+</span></span><span style="display:flex;"><span>        time.sleep(2)  <span style="color:#888;font-style:italic"># Wait for the page to load</span>
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">except</span>:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold;text-decoration:underline">break</span>
+</span></span></code></pre></div><hr>
+<h3 class="heading" id="4-storing-data-in-a-csv-file">
+  <strong>4️⃣ Storing Data in a CSV File</strong>
+  <a class="anchor" href="#4-storing-data-in-a-csv-file">#</a>
+</h3>
+<p>Once we extract the relevant <strong>date, location, and description</strong>, we store it in a structured dataset.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">import</span> <span style="color:#666;font-weight:bold;font-style:italic">pandas</span> <span style="font-weight:bold;text-decoration:underline">as</span> <span style="color:#666;font-weight:bold;font-style:italic">pd</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data = []
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">for</span> row <span style="font-weight:bold">in</span> rows[1:]:
+</span></span><span style="display:flex;"><span>    cells = row.find_all(<span style="color:#666;font-style:italic">&#34;td&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">if</span> <span style="font-weight:bold;font-style:italic">len</span>(cells) &lt; 2:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold;text-decoration:underline">continue</span>
+</span></span><span style="display:flex;"><span>    date = cells[1].text.strip()
+</span></span><span style="display:flex;"><span>    city = cells[2].text.strip()
+</span></span><span style="display:flex;"><span>    data.append({<span style="color:#666;font-style:italic">&#34;Date&#34;</span>: date, <span style="color:#666;font-style:italic">&#34;City&#34;</span>: city})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df = pd.DataFrame(data)
+</span></span><span style="display:flex;"><span>df.to_csv(<span style="color:#666;font-style:italic">&#34;ufo_data.csv&#34;</span>, index=<span style="font-weight:bold;text-decoration:underline">False</span>)
+</span></span></code></pre></div><hr>
+<h2 class="heading" id="-final-thoughts">
+  <strong>📊 Final Thoughts</strong>
+  <a class="anchor" href="#-final-thoughts">#</a>
+</h2>
+<p>With this scraper, I’ve <strong>automated UFO data collection</strong>, making it easier to analyze sightings over time.</p>
+<p>In the next post, I’ll explore how to use <strong>time series forecasting</strong> to predict future sightings. 🚀</p>
+<p>Stay tuned!</p>
+    
+    
+    <script src="https://giscus.app/client.js"
+        data-repo="bitterfq/bitterfq.github.io"
+        data-repo-id="R_kgDONy82nw"
+        data-category=""
+        data-category-id="DIC_kwDONy82n84CmoPb"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flex">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/posts/automating-blog-comments/">
+                        Automating Blog Comments with AI: GPT4All &amp; Giscus Integration
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  <footer>
+    
+
+    
+    <p>Powered by
+        <a href="https://gohugo.io/">Hugo</a>
+        and
+        <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+    </p>
+    
+    
+    
+
+
+  </footer>
+
+  
+
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>

@@ -1,40 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on BitterFq&#39;s Corner 🍻</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Home on BitterFq&#39;s Corner 🍻</description>
-    <generator>Hugo</generator>
+    <title>BitterFq&#39;s Corner 🍻</title>
+    <link>https://bitterfq.github.io/</link>
+    <description>Recent content on BitterFq&#39;s Corner 🍻</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Feb 2025 18:28:04 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Feb 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://bitterfq.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://bitterfq.github.io/about/</link>
+      <pubDate>Mon, 24 Feb 2025 09:00:00 +0000</pubDate>
+      
+      <guid>https://bitterfq.github.io/about/</guid>
+      <description>👋 Hey, I&amp;rsquo;m Aman! I&amp;rsquo;m a data engineer &amp;amp; data scientist, currently pursuing my Master’s at the University of San Francisco. My work revolves around scalable data systems, distributed computing, and geospatial analytics—where I leverage large-scale datasets to generate real-world insights.
+💡 What I Do 🔹 Big Data &amp;amp; ML Engineering – I build high-throughput data pipelines and optimize large-scale data processing.
+🔹 Geospatial Analytics – I work on geospatial ML applications, leveraging satellite imagery, remote sensing data, and spatial databases.</description>
+    </item>
+    
+    <item>
+      <title>Scraping UFO Data: A Journey into the Unknown</title>
+      <link>https://bitterfq.github.io/posts/scrapping-ufo-data/</link>
+      <pubDate>Mon, 24 Feb 2025 09:00:00 +0000</pubDate>
+      
+      <guid>https://bitterfq.github.io/posts/scrapping-ufo-data/</guid>
+      <description>&lt;p&gt;Have you ever gazed up at the night sky and wondered about unexplained lights or mysterious sightings? In my latest project, I set out to collect &lt;strong&gt;UFO sightings data&lt;/strong&gt; from public websites and transform it into a usable dataset for analysis.&lt;/p&gt;
+&lt;p&gt;This post walks you through how I built a web scraper using &lt;strong&gt;Python&lt;/strong&gt;—transforming raw HTML into a &lt;strong&gt;neat CSV file&lt;/strong&gt; ready for data exploration.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>https://bitterfq.github.io/resume/</link>
+      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://bitterfq.github.io/resume/</guid>
+      <description>📄 Download my resume:
+Click here to download my latest resume.</description>
+    </item>
+    
     <item>
       <title>Automating Blog Comments with AI: GPT4All &amp; Giscus Integration</title>
-      <link>http://localhost:1313/posts/automating-blog-comments/</link>
+      <link>https://bitterfq.github.io/posts/automating-blog-comments/</link>
       <pubDate>Mon, 03 Feb 2025 18:28:04 -0800</pubDate>
-      <guid>http://localhost:1313/posts/automating-blog-comments/</guid>
-      <description>&lt;p&gt;What if your blog could automatically generate thoughtful comments for every post? I built a bot that does just that—using &lt;strong&gt;GPT4All for offline AI&lt;/strong&gt; and &lt;strong&gt;Giscus for seamless GitHub integration&lt;/strong&gt;. No cloud APIs, no recurring costs—just smart automation that engages with your blog posts.&lt;/p&gt;</description>
+      
+      <guid>https://bitterfq.github.io/posts/automating-blog-comments/</guid>
+      <description>&lt;p&gt;Engagement is crucial for any blog, but manually responding to every post can be time-consuming. What if your blog could generate thoughtful comments automatically?&lt;/p&gt;
+&lt;p&gt;I developed a bot that does exactly that—leveraging &lt;strong&gt;GPT4All&lt;/strong&gt; for offline AI-generated comments and &lt;strong&gt;Giscus&lt;/strong&gt; for seamless integration with GitHub Discussions. This solution eliminates reliance on cloud-based APIs, ensuring full privacy, cost-efficiency, and automation.&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>On the Lightness of Being</title>
-      <link>http://localhost:1313/posts/lightness_of_being/</link>
-      <pubDate>Sun, 02 Feb 2025 01:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/lightness_of_being/</guid>
-      <description>&lt;p&gt;I wonder what the world has in store for us.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>📊 About Me</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Sat, 01 Feb 2025 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m Aman, a &lt;strong&gt;Data Engineer &amp;amp; Data Scientist&lt;/strong&gt;, currently pursuing my &lt;strong&gt;Master’s in Data Science at the University of San Francisco (USF)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I specialize in &lt;strong&gt;building scalable data pipelines, processing large-scale geospatial datasets, and applying machine learning to real-world data problems.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;-data-engineering&#34;&gt;&#xA;  &lt;strong&gt;🛠️ Data Engineering&lt;/strong&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#-data-engineering&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Big Data Pipelines&lt;/strong&gt; → Processing &lt;strong&gt;100+ GB of satellite imagery weekly&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cloud &amp;amp; Storage&lt;/strong&gt; → Experience with &lt;strong&gt;AWS, GCP, and on-prem data warehouses&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Geospatial Data Processing&lt;/strong&gt; → Automating &lt;strong&gt;geospatial ETL workflows&lt;/strong&gt; for environmental monitoring&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;ETL Optimization&lt;/strong&gt; → Reduced data latency by &lt;strong&gt;40%&lt;/strong&gt; through pipeline refactoring&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;-data-science&#34;&gt;&#xA;  &lt;strong&gt;📈 Data Science&lt;/strong&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#-data-science&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Machine Learning for Geospatial Data&lt;/strong&gt; → Applying &lt;strong&gt;ML models to detect land use changes&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Feature Engineering at Scale&lt;/strong&gt; → Building data transformations that power &lt;strong&gt;predictive models&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Exploratory Data Analysis (EDA)&lt;/strong&gt; → Extracting insights from &lt;strong&gt;multi-terabyte datasets&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Time Series &amp;amp; Forecasting&lt;/strong&gt; → Predicting trends in &lt;strong&gt;satellite imagery &amp;amp; geospatial metrics&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;-current-work&#34;&gt;&#xA;  &lt;strong&gt;⚡ Current Work&lt;/strong&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#-current-work&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Satellite Data Processing&lt;/strong&gt; → Developing an &lt;strong&gt;end-to-end AI-powered geospatial pipeline&lt;/strong&gt; for &lt;strong&gt;The Nature Conservancy&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Debugging &amp;amp; Optimization at Scale&lt;/strong&gt; → Previously worked on &lt;strong&gt;Meta&amp;rsquo;s data warehouse&lt;/strong&gt;, improving SQL &amp;amp; ETL performance&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;-more-about-me&#34;&gt;&#xA;  &lt;strong&gt;📄 More About Me&lt;/strong&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#-more-about-me&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/resume.pdf&#34;&gt;Download My Resume&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/bitterfq&#34;&gt;GitHub&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;#your-linkedin-profile-url&#34;&gt;LinkedIn&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;I enjoy &lt;strong&gt;solving tough data problems&lt;/strong&gt;, optimizing &lt;strong&gt;ML pipelines&lt;/strong&gt;, and engineering &lt;strong&gt;scalable solutions for massive datasets&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
+    
     <item>
       <title>🚀 Automating Geospatial Data for The Nature Conservancy</title>
-      <link>http://localhost:1313/posts/tnc-cli-tool/</link>
-      <pubDate>Sat, 01 Feb 2025 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/tnc-cli-tool/</guid>
-      <description>&lt;p&gt;🌍 &lt;strong&gt;Scaling Environmental Data Processing with a Custom CLI Tool&lt;/strong&gt;&lt;/p&gt;</description>
+      <link>https://bitterfq.github.io/posts/tnc-cli-tool/</link>
+      <pubDate>Sat, 01 Feb 2025 14:00:00 -0800</pubDate>
+      
+      <guid>https://bitterfq.github.io/posts/tnc-cli-tool/</guid>
+      <description>&lt;p&gt;🌍 &lt;strong&gt;Scaling Environmental Data Processing with a Custom CLI Tool&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As part of my work with &lt;strong&gt;The Nature Conservancy (TNC)&lt;/strong&gt;, I developed a &lt;strong&gt;custom CLI tool&lt;/strong&gt; to &lt;strong&gt;automate geospatial data processing&lt;/strong&gt;. This tool streamlines the &lt;strong&gt;retrieval, transformation, and analysis of satellite imagery and GIS data&lt;/strong&gt;, enabling conservationists to focus on &lt;strong&gt;real-world environmental impact&lt;/strong&gt; rather than tedious manual workflows.&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>

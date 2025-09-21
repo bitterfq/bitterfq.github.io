@@ -2,17 +2,17 @@
 <html lang="en-us"
   dir="ltr">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
 
 
-<link rel="icon" type="image/ico" href="http://localhost:1313//favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313//favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313//favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313//android-chrome-192x192.png">
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313//apple-touch-icon.png">
+<link rel="icon" type="image/ico" href="https://bitterfq.github.io//favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bitterfq.github.io//favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bitterfq.github.io//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://bitterfq.github.io//android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://bitterfq.github.io//apple-touch-icon.png">
 
 <meta name="description" content=""/>
 
@@ -24,22 +24,18 @@
     
 </title>
 
-<link rel="canonical" href="http://localhost:1313/posts/automating-blog-comments/"/>
+<link rel="canonical" href="https://bitterfq.github.io/posts/automating-blog-comments/"/>
 
-<meta property="og:url" content="http://localhost:1313/posts/automating-blog-comments/">
+<meta property="og:url" content="https://bitterfq.github.io/posts/automating-blog-comments/">
   <meta property="og:site_name" content="BitterFq&#39;s Corner 🍻">
   <meta property="og:title" content="Automating Blog Comments with AI: GPT4All & Giscus Integration">
-  <meta property="og:description" content="What if your blog could automatically generate thoughtful comments for every post? I built a bot that does just that—using GPT4All for offline AI and Giscus for seamless GitHub integration. No cloud APIs, no recurring costs—just smart automation that engages with your blog posts.">
+  <meta property="og:description" content="Engagement is crucial for any blog, but manually responding to every post can be time-consuming. What if your blog could generate thoughtful comments automatically?
+I developed a bot that does exactly that—leveraging GPT4All for offline AI-generated comments and Giscus for seamless integration with GitHub Discussions. This solution eliminates reliance on cloud-based APIs, ensuring full privacy, cost-efficiency, and automation.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-02-03T18:28:04-08:00">
     <meta property="article:modified_time" content="2025-02-03T18:28:04-08:00">
-    <meta property="article:tag" content="AI">
-    <meta property="article:tag" content="GPT4All">
-    <meta property="article:tag" content="Hugo">
-    <meta property="article:tag" content="Giscus">
-    <meta property="article:tag" content="Automation">
 
 
 
@@ -48,13 +44,38 @@
 
 
 
-<link rel="stylesheet" href="/assets/combined.min.013f2ec38cea8e5e0ec1eb9e6048c28622524f63a910b746c54625882b200de9.css" media="all">
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.4d83d9d131fa58e4a3582b029a9d295c34033e4132d049b0e16fa8d1e9ddfebf.css" media="all">
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
 
 
 
 
 
 </head>
+
+
 
 
 
@@ -71,7 +92,7 @@
     
 
     <h1 class="header-title">
-        <a href="http://localhost:1313/">BitterFq&#39;s Corner 🍻</a>
+        <a href="https://bitterfq.github.io/">BitterFq&#39;s Corner 🍻</a>
     </h1>
 
     <div class="flex">
@@ -88,13 +109,6 @@
         
       
         <p class="small ">
-            <a href="/resume.pdf" >
-                /resume
-            </a>
-        </p>
-        
-      
-        <p class="small ">
             <a href="/posts" >
                 /posts
             </a>
@@ -104,6 +118,13 @@
         <p class="small ">
             <a href="/about" >
                 /about
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/resume.pdf" >
+                /resume
             </a>
         </p>
         
@@ -126,12 +147,12 @@
 <div class="breadcrumbs">
     
     <a href="/">Home</a>
-    <span class="breadcrumbs-separator"> > </span>
+    <span class="breadcrumbs-separator"> / </span>
     
-    <a href="/posts/">Posts</a>
-    <span class="breadcrumbs-separator"> > </span>
+    <a href="/posts/">Home</a>
+    <span class="breadcrumbs-separator"> / </span>
     
-    <a class="breadcrumbs-current" href="/posts/automating-blog-comments/">Automating Blog Comments with AI: GPT4All &amp; Giscus Integration</a>
+    <a href="/posts/automating-blog-comments/">Automating Blog Comments with AI: GPT4All &amp; Giscus Integration</a>
 </div>
 
 
@@ -168,32 +189,23 @@
   
 
   <div class="single-content">
-    <p>What if your blog could automatically generate thoughtful comments for every post? I built a bot that does just that—using <strong>GPT4All for offline AI</strong> and <strong>Giscus for seamless GitHub integration</strong>. No cloud APIs, no recurring costs—just smart automation that engages with your blog posts.</p>
-<h2 class="heading" id="-introduction">
-  <strong>🔥 Introduction</strong>
-  <a class="anchor" href="#-introduction">#</a>
+    <p>Engagement is crucial for any blog, but manually responding to every post can be time-consuming. What if your blog could generate thoughtful comments automatically?</p>
+<p>I developed a bot that does exactly that—leveraging <strong>GPT4All</strong> for offline AI-generated comments and <strong>Giscus</strong> for seamless integration with GitHub Discussions. This solution eliminates reliance on cloud-based APIs, ensuring full privacy, cost-efficiency, and automation.</p>
+<h2 class="heading" id="-project-goals">
+  <strong>🎯 Project Goals</strong>
+  <a class="anchor" href="#-project-goals">#</a>
 </h2>
-<p>I recently built an <strong>AI-powered comment bot</strong> for my Hugo blog that:<br>
-✅ <strong>Generates meaningful comments</strong> on blog posts.<br>
-✅ <strong>Uses GPT4All</strong> for <strong>fully offline AI generation</strong> (no OpenAI API fees).<br>
-✅ <strong>Posts comments to GitHub Discussions via Giscus</strong> for seamless integration.</p>
-<p>This project automates reader engagement and creates an interactive discussion experience <strong>without manual effort</strong>. Here’s how it works.</p>
-<hr>
-<h2 class="heading" id="-the-goal">
-  <strong>🎯 The Goal</strong>
-  <a class="anchor" href="#-the-goal">#</a>
-</h2>
-<p>The main objectives were:</p>
+<p>The objectives of this project were:</p>
 <ol>
-<li><strong>Generate insightful comments</strong> automatically for blog posts.</li>
-<li><strong>Use a local AI model</strong> instead of relying on cloud-based APIs.</li>
-<li><strong>Integrate seamlessly with Giscus</strong>, the GitHub-based comment system for Hugo.</li>
+<li><strong>Automate blog comment generation</strong> with insightful AI responses.</li>
+<li><strong>Utilize a local AI model</strong> instead of cloud-based services like OpenAI.</li>
+<li><strong>Integrate with Giscus</strong> to post comments directly into GitHub Discussions.</li>
 </ol>
-<p>After some trial and error, I ended up using <strong>GPT4All with Llama 3.2 3B</strong> for AI-powered responses and <strong>GitHub&rsquo;s GraphQL API</strong> for comment posting.</p>
+<p>By automating this process, the system fosters engagement while maintaining full <strong>privacy and control</strong> over the workflow.</p>
 <hr>
-<h2 class="heading" id="-tech-stack">
-  <strong>🛠️ Tech Stack</strong>
-  <a class="anchor" href="#-tech-stack">#</a>
+<h2 class="heading" id="-technology-stack">
+  <strong>🛠️ Technology Stack</strong>
+  <a class="anchor" href="#-technology-stack">#</a>
 </h2>
 <table>
   <thead>
@@ -212,7 +224,7 @@
           <td>Hugo</td>
       </tr>
       <tr>
-          <td><strong>Comments System</strong></td>
+          <td><strong>Commenting System</strong></td>
           <td>Giscus (GitHub Discussions)</td>
       </tr>
       <tr>
@@ -227,21 +239,20 @@
 </table>
 <hr>
 <h2 class="heading" id="-how-it-works">
-  <strong>💡 How It Works</strong>
+  <strong>📌 How It Works</strong>
   <a class="anchor" href="#-how-it-works">#</a>
 </h2>
 <p>The bot follows a <strong>three-step process</strong>:</p>
 <p>1️⃣ <strong>Extracts the latest blog post</strong><br>
-2️⃣ <strong>Generates a comment using GPT4All</strong><br>
+2️⃣ <strong>Generates an AI-generated comment using GPT4All</strong><br>
 3️⃣ <strong>Posts the comment to Giscus via GitHub API</strong></p>
-<p>Let’s break it down.</p>
+<p>Each step is designed to be efficient, ensuring the bot can autonomously engage with readers.</p>
 <hr>
-<h2 class="heading" id="-step-1-extract-the-latest-blog-post">
-  <strong>📌 Step 1: Extract the Latest Blog Post</strong>
-  <a class="anchor" href="#-step-1-extract-the-latest-blog-post">#</a>
+<h2 class="heading" id="-step-1-extracting-the-latest-blog-post">
+  <strong>🔍 Step 1: Extracting the Latest Blog Post</strong>
+  <a class="anchor" href="#-step-1-extracting-the-latest-blog-post">#</a>
 </h2>
-<p>We first <strong>scrape the latest blog post</strong> from Hugo’s index page.<br>
-The bot looks for the most recent post URL and extracts its content.</p>
+<p>The bot scrapes the blog’s homepage to retrieve the most recent post and extract its content.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">import</span> <span style="color:#666;font-weight:bold;font-style:italic">requests</span>
 </span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">from</span> <span style="color:#666;font-weight:bold;font-style:italic">bs4</span> <span style="font-weight:bold;text-decoration:underline">import</span> BeautifulSoup
 </span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">import</span> <span style="color:#666;font-weight:bold;font-style:italic">markdownify</span>
@@ -267,11 +278,11 @@ The bot looks for the most recent post URL and extracts its content.</p>
 </span></span><span style="display:flex;"><span>post_content = post_content_div.get_text()
 </span></span><span style="display:flex;"><span>post_markdown = markdownify.markdownify(post_content)
 </span></span></code></pre></div><hr>
-<h2 class="heading" id="-step-2-generate-a-comment-using-gpt4all">
-  <strong>📌 Step 2: Generate a Comment Using GPT4All</strong>
-  <a class="anchor" href="#-step-2-generate-a-comment-using-gpt4all">#</a>
+<h2 class="heading" id="-step-2-generating-ai-comments-with-gpt4all">
+  <strong>💡 Step 2: Generating AI Comments with GPT4All</strong>
+  <a class="anchor" href="#-step-2-generating-ai-comments-with-gpt4all">#</a>
 </h2>
-<p>Instead of OpenAI’s API, we use <strong>GPT4All with Llama 3.2 3B</strong>, a <strong>free and offline</strong> model.</p>
+<p>To avoid dependence on cloud-based APIs, I opted for <strong>GPT4All</strong>, a locally hosted AI model, to generate insightful comments.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">from</span> <span style="color:#666;font-weight:bold;font-style:italic">gpt4all</span> <span style="font-weight:bold;text-decoration:underline">import</span> GPT4All
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">def</span> <span style="color:#666;font-weight:bold;font-style:italic">generate_comment</span>(text):
@@ -279,63 +290,27 @@ The bot looks for the most recent post URL and extracts its content.</p>
 </span></span><span style="display:flex;"><span>    gpt = GPT4All(model_path)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    prompt = (
-</span></span><span style="display:flex;"><span>        <span style="color:#666;font-style:italic">&#34;You are an insightful reader. &#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#666;font-style:italic">&#34;Write a meaningful comment about the following blog post without extra text.</span><span style="color:#666;font-style:italic">\n\n</span><span style="color:#666;font-style:italic">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#666;font-style:italic">&#34;You are an insightful and thoughtful reader. &#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#666;font-style:italic">&#34;Write a meaningful and engaging comment about the following blog post. &#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#666;font-style:italic">&#34;Your response should be a self-contained comment without any additional text.</span><span style="color:#666;font-style:italic">\n\n</span><span style="color:#666;font-style:italic">&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#666;font-style:italic">f</span><span style="color:#666;font-style:italic">&#34;Blog Post:</span><span style="color:#666;font-style:italic">\n</span><span style="color:#666;font-style:italic">{</span>text<span style="color:#666;font-style:italic">}</span><span style="color:#666;font-style:italic">\n\n</span><span style="color:#666;font-style:italic">&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#666;font-style:italic">&#34;### Comment:</span><span style="color:#666;font-style:italic">\n</span><span style="color:#666;font-style:italic">&#34;</span>
 </span></span><span style="display:flex;"><span>    )
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    response = gpt.generate(prompt, max_tokens=200).strip()
-</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#888;font-style:italic"># Append AI signature</span>
-</span></span><span style="display:flex;"><span>    response += <span style="color:#666;font-style:italic">&#34;</span><span style="color:#666;font-style:italic">\n\n</span><span style="color:#666;font-style:italic">*This comment is AI generated.*&#34;</span>
+</span></span><span style="display:flex;"><span>    response += <span style="color:#666;font-style:italic">&#34;</span><span style="color:#666;font-style:italic">\n\n</span><span style="color:#666;font-style:italic">*This comment is AI-generated.*&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">return</span> response
-</span></span></code></pre></div><p>This ensures the comment <strong>stays relevant</strong> and <strong>doesn’t include unnecessary boilerplate</strong>.</p>
+</span></span></code></pre></div><p>This ensures the comments remain <strong>relevant, concise, and structured</strong>, with a clear indication that they are AI-generated.</p>
 <hr>
-<h2 class="heading" id="-step-3-post-the-comment-to-giscus">
-  <strong>📌 Step 3: Post the Comment to Giscus</strong>
-  <a class="anchor" href="#-step-3-post-the-comment-to-giscus">#</a>
+<h2 class="heading" id="-step-3-posting-the-comment-to-giscus">
+  <strong>📌 Step 3: Posting the Comment to Giscus</strong>
+  <a class="anchor" href="#-step-3-posting-the-comment-to-giscus">#</a>
 </h2>
-<p>We <strong>retrieve the correct GitHub Discussion ID</strong> and post the AI-generated comment.</p>
-<h3 class="heading" id="retrieve-the-global-discussion-id">
-  <strong>Retrieve the Global Discussion ID</strong>
-  <a class="anchor" href="#retrieve-the-global-discussion-id">#</a>
-</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">def</span> <span style="color:#666;font-weight:bold;font-style:italic">get_latest_discussion_id</span>():
-</span></span><span style="display:flex;"><span>    url = <span style="color:#666;font-style:italic">&#34;https://api.github.com/graphql&#34;</span>
-</span></span><span style="display:flex;"><span>    headers = {
-</span></span><span style="display:flex;"><span>        <span style="color:#666;font-style:italic">&#34;Authorization&#34;</span>: <span style="color:#666;font-style:italic">f</span><span style="color:#666;font-style:italic">&#34;token </span><span style="color:#666;font-style:italic">{</span>GITHUB_TOKEN<span style="color:#666;font-style:italic">}</span><span style="color:#666;font-style:italic">&#34;</span>,
-</span></span><span style="display:flex;"><span>        <span style="color:#666;font-style:italic">&#34;Accept&#34;</span>: <span style="color:#666;font-style:italic">&#34;application/vnd.github.v3+json&#34;</span>
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    query = <span style="color:#666;font-style:italic">&#34;&#34;&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">    query {
-</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">      repository(owner: &#34;bitterfq&#34;, name: &#34;bitterfq.github.io&#34;) {
-</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">        discussions(first: 5, orderBy: {field: CREATED_AT, direction: DESC}) {
-</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">          nodes {
-</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">            id
-</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">            title
-</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">          }
-</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">        }
-</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">      }
-</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">    }
-</span></span></span><span style="display:flex;"><span><span style="color:#666;font-style:italic">    &#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    response = requests.post(url, json={<span style="color:#666;font-style:italic">&#34;query&#34;</span>: query}, headers=headers)
-</span></span><span style="display:flex;"><span>    discussions = response.json().get(<span style="color:#666;font-style:italic">&#34;data&#34;</span>, {}).get(<span style="color:#666;font-style:italic">&#34;repository&#34;</span>, {}).get(<span style="color:#666;font-style:italic">&#34;discussions&#34;</span>, {}).get(<span style="color:#666;font-style:italic">&#34;nodes&#34;</span>, [])
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">return</span> discussions[0][<span style="color:#666;font-style:italic">&#34;id&#34;</span>] <span style="font-weight:bold;text-decoration:underline">if</span> discussions <span style="font-weight:bold;text-decoration:underline">else</span> <span style="font-weight:bold;text-decoration:underline">None</span>
-</span></span></code></pre></div><h3 class="heading" id="post-the-comment">
-  <strong>Post the Comment</strong>
-  <a class="anchor" href="#post-the-comment">#</a>
-</h3>
+<p>Once the comment is generated, the bot posts it to the correct GitHub Discussion associated with the blog post.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">def</span> <span style="color:#666;font-weight:bold;font-style:italic">post_comment</span>(comment):
-</span></span><span style="display:flex;"><span>    discussion_id = get_latest_discussion_id()
-</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">if</span> <span style="font-weight:bold">not</span> discussion_id:
-</span></span><span style="display:flex;"><span>        <span style="font-weight:bold;font-style:italic">print</span>(<span style="color:#666;font-style:italic">&#34;❌ No valid discussion ID found.&#34;</span>)
-</span></span><span style="display:flex;"><span>        <span style="font-weight:bold;text-decoration:underline">return</span> <span style="font-weight:bold;text-decoration:underline">None</span>
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    url = <span style="color:#666;font-style:italic">&#34;https://api.github.com/graphql&#34;</span>
 </span></span><span style="display:flex;"><span>    headers = {
 </span></span><span style="display:flex;"><span>        <span style="color:#666;font-style:italic">&#34;Authorization&#34;</span>: <span style="color:#666;font-style:italic">f</span><span style="color:#666;font-style:italic">&#34;token </span><span style="color:#666;font-style:italic">{</span>GITHUB_TOKEN<span style="color:#666;font-style:italic">}</span><span style="color:#666;font-style:italic">&#34;</span>,
@@ -357,49 +332,54 @@ The bot looks for the most recent post URL and extracts its content.</p>
 </span></span><span style="display:flex;"><span>    response = requests.post(url, json={<span style="color:#666;font-style:italic">&#34;query&#34;</span>: mutation, <span style="color:#666;font-style:italic">&#34;variables&#34;</span>: variables}, headers=headers)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="font-weight:bold;font-style:italic">print</span>(<span style="color:#666;font-style:italic">f</span><span style="color:#666;font-style:italic">&#34;🔍 Full API Response: </span><span style="color:#666;font-style:italic">{</span>response.json()<span style="color:#666;font-style:italic">}</span><span style="color:#666;font-style:italic">&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">return</span> response.json()
-</span></span></code></pre></div><hr>
-<h2 class="heading" id="-deployment--running-the-bot">
-  <strong>🛠️ Deployment &amp; Running the Bot</strong>
-  <a class="anchor" href="#-deployment--running-the-bot">#</a>
-</h2>
-<p>1️⃣ <strong>Ensure dependencies are installed:</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install requests beautifulsoup4 markdownify gpt4all python-dotenv
-</span></span></code></pre></div><p>2️⃣ <strong>Run the bot:</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python giscus_bot.py
-</span></span></code></pre></div><p>✔ The AI bot <strong>automatically posts comments</strong> to my blog!</p>
+</span></span></code></pre></div><p>The bot ensures that each comment is correctly associated with its respective post, enabling <strong>seamless discussion automation</strong>.</p>
 <hr>
+<h2 class="heading" id="-deployment">
+  <strong>🚀 Deployment</strong>
+  <a class="anchor" href="#-deployment">#</a>
+</h2>
+<ol>
+<li><strong>Install dependencies</strong>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install requests beautifulsoup4 markdownify gpt4all python-dotenv
+</span></span></code></pre></div><ol start="2">
+<li><strong>Run the bot</strong>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python giscus_bot.py
+</span></span></code></pre></div><hr>
 <h2 class="heading" id="-key-takeaways">
-  <strong>💡 Key Takeaways</strong>
+  <strong>🎉 Key Takeaways</strong>
   <a class="anchor" href="#-key-takeaways">#</a>
 </h2>
-<p>🚀 <strong>Fully Automated</strong> → The bot handles everything from <strong>reading, generating, and posting comments</strong>.<br>
-💰 <strong>Free &amp; Offline</strong> → GPT4All replaces expensive cloud-based AI APIs.<br>
-⚡ <strong>Seamless GitHub Integration</strong> → Giscus allows easy, <strong>open-source discussions</strong>.</p>
-<p>This project demonstrates how <strong>automation + AI</strong> can <strong>enhance reader engagement</strong> without manual effort.</p>
+<p>✅ <strong>Fully automated</strong> AI-generated blog comments<br>
+✅ <strong>Offline AI processing</strong> with GPT4All—no cloud API costs<br>
+✅ <strong>Seamless GitHub Discussions integration</strong> via Giscus</p>
+<p>This project demonstrates how <strong>automation and AI</strong> can work together to enhance reader engagement while maintaining full control over content generation.</p>
 <hr>
     
+    
     <script src="https://giscus.app/client.js"
-            data-repo="bitterfq/bitterfq.github.io"
-            data-repo-id="R_kgDONy82nw"
-            data-category="Announcements"
-            data-category-id="DIC_kwDONy82n84CmoPb"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="preferred_color_scheme"
-            data-lang="en"
-            crossorigin="anonymous"
-            async>
-    </script>
-  
+        data-repo="bitterfq/bitterfq.github.io"
+        data-repo-id="R_kgDONy82nw"
+        data-category=""
+        data-category-id="DIC_kwDONy82n84CmoPb"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
 
+    
+    
   </div>
 
   
-
 
   
 
@@ -416,8 +396,8 @@ The bot looks for the most recent post URL and extracts its content.</p>
             <div class="single-pagination-container-prev">
                 <div class="single-pagination-text">←</div>
                 <div class="single-pagination-text">
-                    <a href="/posts/lightness_of_being/">
-                        On the Lightness of Being
+                    <a href="/posts/tnc-cli-tool/">
+                        🚀 Automating Geospatial Data for The Nature Conservancy
                     </a>
                 </div>
             </div>
@@ -425,6 +405,15 @@ The bot looks for the most recent post URL and extracts its content.</p>
         </div>
 
         <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/posts/scrapping-ufo-data/">
+                        Scraping UFO Data: A Journey into the Unknown
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
             
         </div>
 
@@ -473,38 +462,6 @@ The bot looks for the most recent post URL and extracts its content.</p>
 
 </body>
 
-<script>
-
-  function isAuto() {
-    return document.body.classList.contains("auto");
-  }
-
-  function setTheme() {
-    if (!isAuto()) {
-      return
-    }
-
-    document.body.classList.remove("auto");
-    let cls = "light";
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      cls = "dark";
-    }
-
-    document.body.classList.add(cls);
-  }
-
-  function invertBody() {
-    document.body.classList.toggle("dark");
-    document.body.classList.toggle("light");
-  }
-
-  if (isAuto()) {
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(invertBody);
-  }
-
-  setTheme();
-
-</script>
-
+<script src="/js/theme-switch.js"></script>
 <script defer src="/js/copy-code.js"></script>
 </html>
