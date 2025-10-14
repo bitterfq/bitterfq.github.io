@@ -5,9 +5,6 @@ draft: false
 tags: ["AI", "Machine Learning", "Hiking", "Philosophy"]
 ---
 
-I thought a lot about intelligence, nature, and systems on this trip —  
-and how the landscapes around Mt. Shasta mirror the complexity of deep learning.
-
 <!--more-->
 
 # Absolutely fucking nothing.
