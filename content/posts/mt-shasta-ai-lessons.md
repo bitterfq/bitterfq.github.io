@@ -22,4 +22,4 @@ Here’s some pictures though.
 
 ---
 
-That’s it.  
+That’s it.
