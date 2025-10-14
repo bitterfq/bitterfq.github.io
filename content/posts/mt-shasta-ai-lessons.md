@@ -9,7 +9,7 @@ tags: ["AI", "Machine Learning", "Hiking", "Philosophy"]
 
 # Absolutely fucking nothing.
 
-Here’s some pictures.
+Here’s some pictures though.
 
 ---
 
@@ -23,4 +23,3 @@ Here’s some pictures.
 ---
 
 That’s it.  
-No metaphors.
