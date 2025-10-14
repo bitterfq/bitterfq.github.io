@@ -39,7 +39,7 @@ homeCollection = 'posts'
 
 # Lists parameters
 paginationSize = 10  # Number of posts per page
-listSummaries = true
+listSummaries = false  # Hide previews, show only titles (more clickbait)
 listDateFormat = '2 Jan 2006'
 
 # Enable breadcrumbs (navigation)
