@@ -1,6 +1,6 @@
 baseURL = 'https://bitterfq.github.io/'
 languageCode = 'en-us'
-title = "BitterFq's Corner 🍻"
+title = "entropy://"
 theme = 'typo'
 
 # Google Analytics (if you have one)
