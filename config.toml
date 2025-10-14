@@ -21,17 +21,17 @@ hideHeader = false
 # Homepage Introduction (FIXED)
 homeIntroTitle = "Hey, I'm Aman!"
 homeIntroContent = '''
-I’m a **Data Engineer**, currently working at a stealth startup,
-where I focus on **scalable data systems, distributed computing, and backend systems**.
+I’m a **Data Engineer** who builds things that make data actually useful from real-time systems
+to infrastructure that scales.
 
-I work at the intersection of **big data, machine learning, and automation**,
-building systems that transform **raw data into real-world insights**.
+I’ve worked on projects with **Meta** and **The Nature Conservancy**,
+and now I’m focused on building reliable data systems at a stealth startup.
 
-Some of my previous projects have been focused on **real-time data processing,
-and building ETL pipelines** for places like The Nature Conservancy and Meta. 
+If you want to follow along with an engineer learning as he goes, this might be a place for you.
 
-When I’m not coding, I enjoy **hiking, photography, and Muay Thai**.
+Outside of work I’m usually **hiking around Northern California, taking photos, or training Muay Thai**.
 '''
+
 
 # Collection displayed on home page
 homeCollectionTitle = 'Posts'
