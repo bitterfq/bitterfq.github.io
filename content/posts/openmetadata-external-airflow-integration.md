@@ -1,7 +1,7 @@
 ---
 title: "Decoupling OpenMetadata's Orchestration: External Airflow Integration in Practice"
 date: 2025-11-08T19:36:54-08:00
-draft: false
+draft: true
 tags: ["openmetadata", "airflow", "data-engineering", "orchestration", "metadata"]
 ---
 
